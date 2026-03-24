@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mad Riande</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="Mad Riande home">MAD RIANDE</a>
+        <nav class="nav" aria-label="Primary">
+          <div class="menu-wrap">
+            <button
+              class="nav-button"
+              type="button"
+              aria-expanded="false"
+              aria-controls="works-menu"
+              data-works-toggle
+            >
+              works
+            </button>
+            <div class="menu-panel works-panel" id="works-menu" hidden>
+              <a class="menu-item" href="strabi-vismuz.html">
+                Strabi-vismuz
+              </a>
+              <a class="menu-item" href="visual-cortex.html">Visual Cortex</a>
+              <a class="menu-item" href="mad-c-ren-00.html">MAD C+ REN 00</a>
+              <a class="menu-item" href="cyborgism.html">Cyborgism</a>
+              <a class="menu-item" href="ke-1-2-mv2.html">KE = 1/2 mv2</a>
+              <a class="menu-item" href="ciru-jia.html">Ciru-jia</a>
+              <a class="menu-item" href="habit-of-survival.html">Habit of Survival</a>
+            </div>
+          </div>
+          <div class="menu-wrap">
+            <button
+              class="nav-button nav-icon-button"
+              type="button"
+              aria-expanded="false"
+              aria-controls="site-menu"
+              data-menu-toggle
+            >
+              <span class="sr-only">Open menu</span>
+              <span class="hamburger" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </button>
+            <div class="menu-panel" id="site-menu" hidden>
+              <button class="menu-item" type="button" data-bio-toggle>
+                biography
+              </button>
+              <button class="menu-item" type="button" data-contact-toggle>
+                contact
+              </button>
+              <button class="menu-item" type="button" data-exhibits-toggle>
+                exhibits/press
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero-card" id="works" aria-labelledby="hero-title">
+          <div class="hero-line" aria-hidden="true"></div>
+          <div class="hero-media">
+            <video
+              controls
+              autoplay
+              loop
+              playsinline
+              poster="landing%20page.png"
+              id="hero-video"
+              aria-label="Installation artwork video"
+            >
+              <source src="Strabi-Vismuz.MP4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="hero-copy" id="about" hidden>
+            <button class="bio-close" type="button" aria-label="Close bio" data-bio-close>
+              +
+            </button>
+            <p class="eyebrow" id="hero-title">Biography</p>
+            <p>
+              Mad Riande (Panamanian, b. 1992) is a multidisciplinary artist
+              based in LA, California. Working across painting, sculpture, video
+              performance and interactive systems using Arduino, her practice
+              engages biological research, memory, and evolving technological
+              environments.
+            </p>
+            <p>
+              Mad received a BFA in Industrial Design from the Savannah College
+              of Art and Design and an MFA from Pratt Institute. Her work has
+              been exhibited at Museo de Arte Contemporaneo de Panama, Rubelle
+              & Norman Schafler Gallery (Brooklyn), Workspace Gallery
+              (Manchester, CT), Satellite Art Fair - Art Basel (Miami), Centro
+              Cultural Internacional (Panama City), Prisma Estudio (Lisbon),
+              and Galeria Habitante (Panama), among others.
+            </p>
+          </div>
+          <div class="hero-copy" id="exhibits-press" hidden>
+            <button
+              class="bio-close"
+              type="button"
+              aria-label="Close exhibits and press"
+              data-exhibits-close
+            >
+              +
+            </button>
+            <p class="eyebrow">Exhibits / Press</p>
+            <ul class="info-list">
+              <li>Prisma Estudio | Solace Exhibition | Residency and Exhibition, Lisbon, Portugal | 2023</li>
+              <li>Satellite Art Show | Art Basel 2022, Miami, Florida | 2023</li>
+              <li>INSIGHT 3 - To the Third Power Exhibition | Work Space Gallery, Manchester, NY | 2022</li>
+              <li>Corpus: Landscapes of Memories and Eternal Sprouting | The Rubelle & Norman Schafler Gallery, Brooklyn, NY | 2022</li>
+              <li>Pratt's 2022 Fine Art and Photography MFA Thesis Exhibition, New York City, NY | 2022</li>
+              <li>El 20 y Su Contexto | CCI - Centro Cultural Internacional, Panama City, Panama | 2019</li>
+              <li>Pa'Lante | Galeria Mateo Sariel, Panama City, Panama | May 7, 2017</li>
+              <li>Shift Design Residence, Tuscumbia, Alabama | 2016</li>
+            </ul>
+            <ul class="info-list">
+              <li>Artist Close up #7 | Contemporary Art Magazine, London, UK | 2021</li>
+              <li>Collect Art - Summer Issue, Tbilisi, Georgia | 2021</li>
+              <li>
+                "Meet Madeleine Riande | Multidisciplinary Artist" | Shoutout Arizona Magazine, Arizona, USA | 2023
+                <br />
+                <a href="https://shoutoutarizona.com/meet-madeleine-riande-multidisciplinary-artist" target="_blank" rel="noreferrer">
+                  shoutoutarizona.com/meet-madeleine-riande-multidisciplinary-artist
+                </a>
+              </li>
+              <li>
+                "EL ARTE ES CONCEPTUALMENTE INTELECTUAL" | Selecta Panama, Panama City, Panama | 2023
+                <br />
+                <a href="https://www.selectamagazine.com.pa/?s=Madeleine+riand8" target="_blank" rel="noreferrer">
+                  selectamagazine.com.pa/?s=Madeleine+riand8
+                </a>
+              </li>
+              <li>
+                "Madeleine Riande: Explora la Libertad del Arte" | Revista AUNO, Panama City, Panama | 2023
+                <br />
+                <a href="https://www.revistaauno.com/post/madeleine-riande-explora-la-libertad-del-art8" target="_blank" rel="noreferrer">
+                  revistaauno.com/post/madeleine-riande-explora-la-libertad-del-art8
+                </a>
+              </li>
+              <li>
+                "Pratt's 2022 Fine Arts and Photography MFA Thesis Exhibition on View in Brooklyn" | Hipper Allergic USA | 2022
+                <br />
+                <a href="https://hyperallergic.com/724758/pratt-2022-fine-arts-photography-mfa-thesis-exhibition" target="_blank" rel="noreferrer">
+                  hyperallergic.com/724758/pratt-2022-fine-arts-photography-mfa-thesis-exhibition
+                </a>
+              </li>
+              <li>“Madeleine Riande, una propuesta unica, desde la trinchera de la imaginacion” | La Estrella Panama, Panama City, Panama | 2020</li>
+            </ul>
+          </div>
+          <div class="hero-copy contact-modal" id="contact-modal" hidden>
+            <button
+              class="bio-close"
+              type="button"
+              aria-label="Close contact"
+              data-contact-close
+            >
+              +
+            </button>
+            <p class="eyebrow">Contact</p>
+            <form class="contact-form" data-contact-form>
+              <label class="contact-field">
+                <span>name</span>
+                <input type="text" name="name" autocomplete="name" />
+              </label>
+              <label class="contact-field">
+                <span>email</span>
+                <input type="email" name="email" autocomplete="email" />
+              </label>
+              <label class="contact-field">
+                <span>message</span>
+                <textarea name="message" rows="6" required></textarea>
+              </label>
+              <div class="contact-actions">
+                <button class="contact-send" type="submit">send</button>
+                <a class="contact-direct" href="mailto:mad@worm.wtf">mad@worm.wtf</a>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" id="contact">
+        <div class="status">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>Online</span>
+        </div>
+
+        <div class="footer-meta">
+          <a
+            href="https://www.instagram.com/funkadelik_mad/"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="5" y="5" width="14" height="14" rx="4"></rect>
+              <circle cx="12" cy="12" r="3.2"></circle>
+              <circle cx="16.7" cy="7.3" r="1"></circle>
+            </svg>
+          </a>
+          <a
+            href="https://t.me/funkamad"
+            aria-label="Telegram"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M20.4 5.3 3.9 11.6c-.8.3-.8 1.4 0 1.7l4.2 1.3 1.6 4.8c.2.7 1.1.8 1.6.2l2.4-2.9 4.7 3.5c.7.5 1.7.1 1.8-.8l1.5-12.4c.1-1-1-1.7-1.9-1.3Z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const bioToggle = document.querySelector("[data-bio-toggle]");
+      const bioClose = document.querySelector("[data-bio-close]");
+      const bioPanel = document.querySelector("#about");
+      const exhibitsToggle = document.querySelector("[data-exhibits-toggle]");
+      const exhibitsClose = document.querySelector("[data-exhibits-close]");
+      const exhibitsPanel = document.querySelector("#exhibits-press");
+      const worksToggle = document.querySelector("[data-works-toggle]");
+      const worksPanel = document.querySelector("#works-menu");
+      const menuToggle = document.querySelector("[data-menu-toggle]");
+      const menuPanel = document.querySelector("#site-menu");
+      const contactToggle = document.querySelector("[data-contact-toggle]");
+      const contactClose = document.querySelector("[data-contact-close]");
+      const contactPanel = document.querySelector("#contact-modal");
+      const contactForm = document.querySelector("[data-contact-form]");
+      const main = document.querySelector("main");
+      const video = document.querySelector("#hero-video");
+
+      function setBioVisibility(isVisible) {
+        bioPanel.hidden = !isVisible;
+        if (isVisible) {
+          setExhibitsVisibility(false);
+          setContactVisibility(false);
+        }
+      }
+
+      function setExhibitsVisibility(isVisible) {
+        exhibitsPanel.hidden = !isVisible;
+        if (isVisible) {
+          setBioVisibility(false);
+          setContactVisibility(false);
+        }
+      }
+
+      function setContactVisibility(isVisible) {
+        contactPanel.hidden = !isVisible;
+        if (isVisible) {
+          setBioVisibility(false);
+          setExhibitsVisibility(false);
+        }
+      }
+
+      function setMenuVisibility(isVisible) {
+        menuPanel.hidden = !isVisible;
+        menuToggle.setAttribute("aria-expanded", String(isVisible));
+        if (isVisible) {
+          setWorksVisibility(false);
+        }
+      }
+
+      function setWorksVisibility(isVisible) {
+        worksPanel.hidden = !isVisible;
+        worksToggle.setAttribute("aria-expanded", String(isVisible));
+        if (isVisible) {
+          setMenuVisibility(false);
+        }
+      }
+
+      bioToggle.addEventListener("click", () => {
+        const nextState = bioPanel.hidden;
+        setBioVisibility(nextState);
+        setMenuVisibility(false);
+        bioToggle.blur();
+      });
+
+      bioClose.addEventListener("click", () => {
+        setBioVisibility(false);
+      });
+
+      exhibitsToggle.addEventListener("click", () => {
+        const nextState = exhibitsPanel.hidden;
+        setExhibitsVisibility(nextState);
+        setMenuVisibility(false);
+        exhibitsToggle.blur();
+      });
+
+      exhibitsClose.addEventListener("click", () => {
+        setExhibitsVisibility(false);
+      });
+
+      worksToggle.addEventListener("click", () => {
+        setWorksVisibility(worksPanel.hidden);
+        worksToggle.blur();
+      });
+
+      menuToggle.addEventListener("click", () => {
+        setMenuVisibility(menuPanel.hidden);
+        menuToggle.blur();
+      });
+
+      contactToggle.addEventListener("click", () => {
+        const nextState = contactPanel.hidden;
+        setContactVisibility(nextState);
+        setMenuVisibility(false);
+        contactToggle.blur();
+      });
+
+      contactClose.addEventListener("click", () => {
+        setContactVisibility(false);
+      });
+
+      contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const formData = new FormData(contactForm);
+        const name = String(formData.get("name") || "").trim();
+        const email = String(formData.get("email") || "").trim();
+        const message = String(formData.get("message") || "").trim();
+        const subject = encodeURIComponent(
+          name ? `Website inquiry from ${name}` : "Website inquiry"
+        );
+        const body = encodeURIComponent(
+          `${email ? `From: ${email}\n\n` : ""}${message}`
+        );
+        window.location.href = `mailto:mad@worm.wtf?subject=${subject}&body=${body}`;
+      });
+
+      document.addEventListener("click", (event) => {
+        if (!menuPanel.contains(event.target) && !menuToggle.contains(event.target)) {
+          setMenuVisibility(false);
+        }
+
+        if (!worksPanel.contains(event.target) && !worksToggle.contains(event.target)) {
+          setWorksVisibility(false);
+        }
+
+        if (
+          !bioPanel.hidden &&
+          !bioPanel.contains(event.target) &&
+          !bioToggle.contains(event.target)
+        ) {
+          setBioVisibility(false);
+        }
+
+        if (
+          !exhibitsPanel.hidden &&
+          !exhibitsPanel.contains(event.target) &&
+          !exhibitsToggle.contains(event.target)
+        ) {
+          setExhibitsVisibility(false);
+        }
+
+        if (
+          !contactPanel.hidden &&
+          !contactPanel.contains(event.target) &&
+          !contactToggle.contains(event.target)
+        ) {
+          setContactVisibility(false);
+        }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          setMenuVisibility(false);
+          setWorksVisibility(false);
+          setBioVisibility(false);
+          setExhibitsVisibility(false);
+          setContactVisibility(false);
+        }
+      });
+
+      async function startVideo() {
+        try {
+          video.muted = false;
+          await video.play();
+        } catch (error) {
+        }
+      }
+
+      function syncVideoParallax() {
+        const totalScroll = Math.max(main.offsetHeight - window.innerHeight, 1);
+        const scrollProgress = Math.min(
+          1,
+          Math.max(0, window.scrollY / totalScroll)
+        );
+        const offset = scrollProgress * -90;
+        document.documentElement.style.setProperty(
+          "--media-offset",
+          `${offset}px`
+        );
+      }
+
+      video.addEventListener("canplay", startVideo, { once: true });
+      window.addEventListener("scroll", syncVideoParallax, { passive: true });
+      window.addEventListener("resize", syncVideoParallax);
+
+      startVideo();
+      syncVideoParallax();
+    </script>
+  </body>
+</html>
