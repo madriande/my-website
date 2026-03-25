@@ -1169,6 +1169,16 @@ main {
     border-radius: 16px;
   }
 
+  .work-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    height: auto;
+  }
+
+  .work-grid video {
+    aspect-ratio: 16 / 10;
+  }
+
   .work-detail-media-portrait img {
     max-height: min(70vh, 760px);
   }
