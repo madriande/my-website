@@ -1100,6 +1100,17 @@ main {
     gap: 8px;
   }
 
+  .work-page-shell .footer {
+    position: static;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    padding: 0;
+    margin-top: 24px;
+    background: none;
+  }
+
 }
 
 @media (max-width: 560px) {
@@ -1160,7 +1171,7 @@ main {
 
   .work-page-shell {
     padding-top: 82px;
-    padding-bottom: 24px;
+    padding-bottom: 20px;
   }
 
   .work-detail-card,
@@ -1178,14 +1189,18 @@ main {
     border-radius: 16px;
   }
 
+  .work-detail-placeholder {
+    aspect-ratio: 4 / 5;
+  }
+
   .work-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: none;
-    height: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    height: 100%;
   }
 
   .work-grid video {
-    aspect-ratio: 16 / 10;
+    aspect-ratio: auto;
   }
 
   .work-detail-media-portrait img {
@@ -1221,6 +1236,11 @@ main {
   .footer {
     font-size: 0.82rem;
     flex-wrap: nowrap;
+  }
+
+  .work-page-shell .footer {
+    margin-top: 20px;
+    padding-bottom: env(safe-area-inset-bottom);
   }
 }
 
