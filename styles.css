@@ -878,7 +878,7 @@ main {
 @media (max-width: 720px) {
   :root {
     --frame-top: 96px;
-    --frame-bottom: 104px;
+    --frame-bottom: 120px;
   }
 
   .page-shell {
@@ -933,8 +933,8 @@ main {
   }
 
   .hero-card {
-    min-height: calc(100vh - var(--frame-top) - var(--frame-bottom));
-    height: calc(100vh - var(--frame-top) - var(--frame-bottom));
+    min-height: calc(100dvh - var(--frame-top) - var(--frame-bottom));
+    height: calc(100dvh - var(--frame-top) - var(--frame-bottom));
     border-radius: 18px;
   }
 
@@ -1083,7 +1083,12 @@ main {
   }
 
   .footer {
-    bottom: max(10px, env(safe-area-inset-bottom));
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 12px 12px calc(12px + env(safe-area-inset-bottom));
+    background: linear-gradient(180deg, rgba(21, 21, 21, 0), rgba(21, 21, 21, 0.92) 28%, #151515 100%);
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -1100,7 +1105,7 @@ main {
 @media (max-width: 560px) {
   :root {
     --frame-top: 92px;
-    --frame-bottom: 90px;
+    --frame-bottom: 116px;
   }
 
   .topbar {
@@ -1139,7 +1144,7 @@ main {
 
   .hero-card {
     min-height: auto;
-    height: min(72vh, 620px);
+    height: min(78dvh, 760px);
   }
 
   .hero-line {
@@ -1214,7 +1219,6 @@ main {
   }
 
   .footer {
-    bottom: max(8px, env(safe-area-inset-bottom));
     font-size: 0.82rem;
     flex-wrap: nowrap;
   }
